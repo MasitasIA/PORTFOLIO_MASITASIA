@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* Modo claro */
+    --background: #fdf2f8;
+    --foreground: #2d1b2e;
+    --primary: #a54e95;
+    --secondary: #d946ef;
+    --card-bg: #ffffff;
+    --card-border: #fbcfe8;
+    --navbar-background: rgba(253, 242, 248, 0.7);
+    --navbar-foreground: #2d1b2e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-card-bg: var(--card-bg);
+    --color-card-border: var(--card-border);
+    --color-navbar-background: var(--navbar-background);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        /* Modo oscuro */
+        --background: #1c0d1a;
+        --foreground: #fdf2f8;
+        --primary: #a54e95;
+        --secondary: #d946ef;
+        --card-bg: rgba(255, 255, 255, 0.03);
+        --card-border: rgba(255, 255, 255, 0.1);
+        --navbar-background: rgba(28, 13, 26, 0.85);
+        --navbar-foreground: #fdf2f8;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
