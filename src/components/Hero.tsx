@@ -219,7 +219,7 @@ export default function Hero() {
             </div>
 
             {/* Resplandor de fondo ajustado para ser responsivo (w-[300px] en móvil y [600px] en sm) */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-primary/20 rounded-full blur-[90px] sm:blur-[120px] pointer-events-none -z-10"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 sm:w-150 sm:h-150 bg-primary/20 rounded-full blur-[90px] sm:blur-[120px] pointer-events-none -z-10"></div>
         </section>
     );
 }
