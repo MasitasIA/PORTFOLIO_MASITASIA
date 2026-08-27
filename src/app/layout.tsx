@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://masitasia.com.ar"),
     title: "MasitasIA (Nereo Schmidt) | Portafolio",
     description: "Desarrollador de aplicaciones web y móviles",
     keywords: [
@@ -20,19 +21,17 @@ export const metadata: Metadata = {
     openGraph: {
         title: "MasitasIA | Portafolio Personal",
         description:
-            "Explora mis proyectos, experiencia y repositorios de código.",
+            "Explorá mis proyectos, experiencia y repositorios de código.",
         url: "https://masitasia.com.ar",
         siteName: "MasitasIA Portfolio",
-        images: [
-            {
-                url: "/OG.png",
-                width: 1200,
-                height: 630,
-                alt: "Logo de MasitasIA",
-            },
-        ],
         locale: "es_AR",
         type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "MasitasIA | Portafolio Personal",
+        description:
+            "Explorá mis proyectos, experiencia y repositorios de código.",
     },
 };
 
