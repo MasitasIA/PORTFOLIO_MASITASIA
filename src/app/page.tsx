@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Stack from "@/components/Stack";
 
 import TextLoop from "@/components/TextLoop";
 
@@ -27,6 +28,7 @@ export default function Home() {
                 </div>
             </div>
             <Stats />
+            <Stack />
         </main>
     );
 }
