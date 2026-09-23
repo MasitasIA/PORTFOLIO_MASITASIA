@@ -1,5 +1,15 @@
 // src/app/carrera/page.tsx
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Carrera",
+    description:
+        "Un recorrido por mi formación académica y mi desarrollo profesional en el mundo laboral.",
+    alternates: {
+        canonical: "/carrera",
+    },
+};
 
 export default function CarreraPage() {
     return (

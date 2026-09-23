@@ -7,7 +7,13 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://masitasia.com.ar"),
-    title: "MasitasIA (Nereo Schmidt) | Portafolio",
+    alternates: {
+        canonical: "/",
+    },
+    title: {
+        default: "MasitasIA (Nereo Schmidt) | Portafolio",
+        template: "%s | MasitasIA",
+    },
     description: "Desarrollador de aplicaciones web y móviles",
     keywords: [
         "Nereo Schmidt",

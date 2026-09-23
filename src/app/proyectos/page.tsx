@@ -1,8 +1,18 @@
 // src/app/proyectos/page.tsx
+import type { Metadata } from "next";
 import Link from "next/link";
 import HeroProyectos from "@/components/HeroProyectos";
 import ProyectoCard from "@/components/ProyectoCard";
 import { misProyectos } from "@/data/proyectos";
+
+export const metadata: Metadata = {
+    title: "Proyectos",
+    description:
+        "Explorá mis proyectos destacados, aplicaciones web y desarrollos móviles.",
+    alternates: {
+        canonical: "/proyectos",
+    },
+};
 
 export default function ProyectosPage() {
     return (
